@@ -1,0 +1,48 @@
+import {
+  Controller,
+  Post,
+  Body,
+  Get,
+  Patch,
+  Param,
+  HttpException,
+  HttpStatus,
+  UseInterceptors,
+  HttpService,
+  UploadedFile,
+  Res,
+  Query,
+} from '@nestjs/common';
+
+import { _CLASS_Service as Service } from './_NAME_.service';
+
+@Controller('_NAME_')
+export class PluginController {
+ constructor(public service: Service) {}
+
+
+  @Get(':id')
+  async findOneById(@Param() dto: any) {
+    const { id } = dto;
+    const res = await this.service.findOneById(id);
+    return res;
+  }
+
+  @Get()
+  async findList(@Param() dto: any) {
+    const res = await this.service.findList({});
+    return res;
+  }
+
+  @Post()
+  async add(@Body() dto: any) {
+    await this.service.add(dto);
+    return {};
+  }
+
+  @Patch()
+  async update(@Body() dto: any) {
+    await this.service.update(dto);
+    return {};
+  }
+}

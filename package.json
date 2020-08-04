@@ -1,0 +1,30 @@
+{
+  "name": "generate-nest-temp",
+  "version": "1.0.0",
+  "description": "生成nest代码模板",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dengnan123/generate-nest-temp.git"
+  },
+  "author": "dany",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dengnan123/generate-nest-temp/issues"
+  },
+  "dependencies": {
+    "commander": "^6.0.0",
+    "fs-extra": "^8.1.0",
+    "inquirer": "^7.0.1",
+    "lodash": "^4.17.19",
+    "node-ssh": "^7.0.0",
+    "replace-in-file": "^6.1.0",
+    "scp2": "^0.5.0",
+    "shelljs": "^0.8.4",
+    "signale": "^1.4.0"
+  },
+  "homepage": "https://github.com/dengnan123/generate-nest-temp#readme"
+}
