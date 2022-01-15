@@ -23,7 +23,7 @@
     "node-ssh": "^7.0.0",
     "replace-in-file": "^6.1.0",
     "scp2": "^0.5.0",
-    "shelljs": "^0.8.4",
+    "shelljs": "^0.8.5",
     "signale": "^1.4.0"
   },
   "homepage": "https://github.com/dengnan123/generate-nest-temp#readme"
